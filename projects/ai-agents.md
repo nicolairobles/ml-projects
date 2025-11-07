@@ -82,7 +82,7 @@ Return structured report
 ### *Example: 4-Week Plan*
 
 **Phase 1 (Week 1): Define Use Case & Minimum Workflow**
-- Define agent specialty (e.g., competitive research)
+- Define agent specialty (e.g., customer pain point discovery agent)
 - List must-have tools (e.g., Bing Search API, URL summarizer)
 - Write simple functional spec with user stories (Product: Al)
 - Set initial evaluation metric (e.g., “agent finds 3+ relevant competitor features in <2 min”)
