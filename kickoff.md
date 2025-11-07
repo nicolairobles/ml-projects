@@ -158,6 +158,28 @@
 → [Jupyter Notebooks](https://jupyter.org) / [Google Colab](https://colab.research.google.com) for tutorials  
 → [Streamlit](https://streamlit.io) for quick demos
 
+__
+
+## Slide 5.5: Proposed Workflow—AI in Planning & Coding
+
+1. **Generate Tasks With AI**
+   - Use AI to break down features into clear tasks/issues, complete with acceptance criteria.
+
+2. **Review & Align**
+   - Team reviews AI-generated tasks to ensure they fit the overall project plan and priorities.
+
+3. **Assign & Prep**
+   - Assign tasks on GitHub, clarify ownership, and set any missing criteria.
+
+4. **Code With AI Support**
+   - Use AI for boilerplate code, explanations, or quick prototypes—always test and understand first.
+
+5. **Quality-Check & QA**
+   - Run/QA code, compare to acceptance criteria, and review as a team before merging.
+
+**AI speeds up planning and coding, but we stay in control and keep quality high!**
+
+
 ---
 
 ## Slide 6: Our Learning Approach
