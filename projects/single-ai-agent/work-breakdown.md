@@ -1,28 +1,6 @@
-
 ### 2.05 Create WBS (Work Breakdown Structure)
-
-**Inputs:**
-- Project Scope Statement
-- Requirements Documentation
-
-**Tools & Techniques:**
-
-**Decomposition:**
-
-**WBS STRUCTURE**
-
 ```
-Level 1: PROJECT
-Customer Pain Point Discovery Agent
-
-Level 2: PHASES
-├── 1.0 Project Management
-├── 2.0 Phase 1: Foundation 
-├── 3.0 Phase 2: Multi-Source Integration 
-├── 4.0 Phase 3: Enhancement & Polish
-└── 5.0 Phase 4: Deployment & Documentation
-
-Level 3: DELIVERABLES
+DELIVERABLES
 
 1.0 PROJECT MANAGEMENT
 ├── 1.1 Project Planning
@@ -53,34 +31,6 @@ Level 3: DELIVERABLES
 ├── 5.2 Documentation
 ├── 5.3 Demo Video Creation
 └── 5.4 Team Knowledge Transfer
-
-Level 4: WORK PACKAGES
-
-2.1 Development Environment Setup
-├── 2.1.1 GitHub Repository Creation
-├── 2.1.2 Python Environment Configuration
-├── 2.1.3 API Key Provisioning
-└── 2.1.4 Dependency Installation
-
-2.2 Reddit Integration
-├── 2.2.1 Reddit API Wrapper Development
-├── 2.2.2 Reddit Search Functionality
-├── 2.2.3 Data Parsing & Formatting
-└── 2.2.4 Unit Tests for Reddit Tool
-
-2.3 LangChain Agent Core
-├── 2.3.1 Agent Initialization
-├── 2.3.2 Tool Registration
-├── 2.3.3 Query Processing Logic
-└── 2.3.4 Pain Point Extraction with LLM
-
-2.4 Basic Streamlit UI
-├── 2.4.1 UI Layout Design
-├── 2.4.2 Query Input Component
-├── 2.4.3 Results Display Component
-└── 2.4.4 Basic Styling
-
-(Continue for all phases...)
 ```
 
 **ACTIVITY LIST (Week 1 - Detailed)**
@@ -234,66 +184,4 @@ Description: Commit all code with descriptive messages
 Work Package: 2.4 (Deliverable acceptance)
 Duration: 0.5 hours
 Owner: Nicolai
-```
-
-**MILESTONE LIST**
-
-```
-Milestone ID: M1
-Milestone Name: Phase 1 Complete - Basic Agent Working
-Description: Agent can search Reddit and extract pain points via Streamlit UI
-Acceptance Criteria:
-- Reddit tool returns 10+ posts
-- LLM extraction returns structured pain points
-- Streamlit displays results
-- Code pushed to GitHub
-
----
-
-Milestone ID: M2
-Milestone Name: Phase 2 Complete - Multi-Source Agent
-Description: Agent searches 3 sources (Reddit, Twitter, Google)
-Acceptance Criteria:
-- All 3 tools integrated
-- Agent orchestrates multiple sources
-- Results aggregated and de-duplicated
-- Enhanced UI with filters
-
----
-
-Milestone ID: M3
-Milestone Name: Phase 3 Complete - Production-Ready
-Description: Error handling, performance optimization, comprehensive testing
-Acceptance Criteria:
-- Error handling for all API failures
-- Response time < 2 minutes
-- 10+ test cases passing
-- UI polished and mobile-responsive
-
----
-
-Milestone ID: M4
-Milestone Name: Project Complete - Deployed & Documented
-Description: Live deployment, documentation, demo video
-Acceptance Criteria:
-- Deployed on Streamlit Cloud (public URL)
-- README with setup instructions
-- Demo video created and uploaded
-- All team members can demo the project
-
----
-
-Milestone ID: M5
-Milestone Name: 50% Code Complete
-Type: Optional (Progress Indicator)
-Description: Half of all planned code written
-Criteria: 50% of work packages marked complete
-
----
-
-Milestone ID: M6
-Milestone Name: First Public Demo
-Type: Optional (Marketing)
-Description: Share demo link on LinkedIn/Twitter
-Criteria: Agent functional enough for external viewing
 ```
