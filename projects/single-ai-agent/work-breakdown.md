@@ -50,68 +50,92 @@ Activity: Set up Python virtual environment
 Description: Create venv, install dependencies from requirements.txt
 Work Package: 2.1.2 Python Environment Configuration
 Duration: 0.5 hours
+Story Points: 3
 Owner: All team members (parallel)
 
 Activity ID: 1.1.3
 Activity: Obtain OpenAI API key
 Description: Sign up, generate API key, test with simple prompt
 Work Package: 2.1.3 API Key Provisioning
+Story Points: 1
 Duration: 0.25 hours
-Owner: All team members
+Owner: Nicolai
+AC:
+- in .env file, private
 
 Activity ID: 1.1.4
 Activity: Obtain Reddit API credentials
 Description: Create Reddit app, get client_id and client_secret
 Work Package: 2.1.3 API Key Provisioning
 Duration: 0.25 hours
-Owner: All team members
+Story Points: 1
+Owner: Nicolai
+AC:
+- in .env
 
 Activity ID: 1.1.5
 Activity: Test API connections
 Description: Run test scripts to verify OpenAI and Reddit APIs working
 Work Package: 2.1.4 Dependency Installation
 Duration: 0.5 hours
-Owner: Javier, Stefan
+Owner: Javier, Stefan, Edison
 
 Activity ID: 1.2.1
 Activity: Design Reddit API wrapper interface
 Description: Define function signatures and return data structure
 Work Package: 2.2.1 Reddit API Wrapper Development
 Duration: 1 hour
-Owner: ?
+Story points: 3
+Owner: Stefan
 
 Activity ID: 1.2.2
 Activity: Implement Reddit search functionality
 Description: Code search_subreddits() function with error handling
 Work Package: 2.2.2 Reddit Search Functionality
 Duration: 4 hours
-Owner: ?
+Story Points: 5
+Owner: Edison
 
 Activity ID: 1.2.3
 Activity: Implement Reddit data parsing
 Description: Parse Reddit API response into standardized format
 Work Package: 2.2.3 Data Parsing & Formatting
 Duration: 2 hours
-Owner: ?
+Story Points: 3
+Owner: Javier
 
 Activity ID: 1.2.4
 Activity: Write unit tests for Reddit tool
 Description: Test cases for search, parsing, error conditions
 Work Package: 2.2.4 Unit Tests for Reddit Tool
 Duration: 2 hours
+Story Points: 3
 Owner: Amanda
+
+Activity ID: ?
+Activity: Set up Open AI LLM integration point
+Description: For LLM prompt interactions
+Work Package: ?
+Story Points: 3
+Duration: 1 hour
+Owner: Javier
 
 Activity ID: 1.3.1
 Activity: Design pain point extraction prompt
 Description: Write LLM prompt for extracting pain points from text
 Work Package: 2.3.4 Pain Point Extraction with LLM
+Story Points: 
 Duration: 1 hour
 Owner: Javier
+
+---- TO CONTINUE LATER
+
 
 Activity ID: 1.3.2
 Activity: Implement pain point extractor
 Description: Create extract_pain_points() function using OpenAI API
 Work Package: 2.3.4 Pain Point Extraction with LLM
+Story Points: 
 Duration: 3 hours
 Owner: Javier
 
@@ -135,6 +159,7 @@ Description: Create run() method that orchestrates tool calls
 Work Package: 2.3.3 Query Processing Logic
 Duration: 3 hours
 Owner: Stefan
+
 
 Activity ID: 1.4.1
 Activity: Design Streamlit UI layout
