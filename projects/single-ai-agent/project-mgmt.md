@@ -155,3 +155,65 @@ CONSTRAINTS:
 ```
 
 
+**MILESTONE LIST**
+
+```
+Milestone ID: M1
+Milestone Name: Phase 1 Complete - Basic Agent Working
+Description: Agent can search Reddit and extract pain points via Streamlit UI
+Acceptance Criteria:
+- Reddit tool returns 10+ posts
+- LLM extraction returns structured pain points
+- Streamlit displays results
+- Code pushed to GitHub
+
+---
+
+Milestone ID: M2
+Milestone Name: Phase 2 Complete - Multi-Source Agent
+Description: Agent searches 3 sources (Reddit, Twitter, Google)
+Acceptance Criteria:
+- All 3 tools integrated
+- Agent orchestrates multiple sources
+- Results aggregated and de-duplicated
+- Enhanced UI with filters
+
+---
+
+Milestone ID: M3
+Milestone Name: Phase 3 Complete - Production-Ready
+Description: Error handling, performance optimization, comprehensive testing
+Acceptance Criteria:
+- Error handling for all API failures
+- Response time < 2 minutes
+- 10+ test cases passing
+- UI polished and mobile-responsive
+
+---
+
+Milestone ID: M4
+Milestone Name: Project Complete - Deployed & Documented
+Description: Live deployment, documentation, demo video
+Acceptance Criteria:
+- Deployed on Streamlit Cloud (public URL)
+- README with setup instructions
+- Demo video created and uploaded
+- All team members can demo the project
+
+---
+
+Milestone ID: M5
+Milestone Name: 50% Code Complete
+Type: Optional (Progress Indicator)
+Description: Half of all planned code written
+Criteria: 50% of work packages marked complete
+
+---
+
+Milestone ID: M6
+Milestone Name: First Public Demo
+Type: Optional (Marketing)
+Description: Share demo link on LinkedIn/Twitter
+Criteria: Agent functional enough for external viewing
+```
+
