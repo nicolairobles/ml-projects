@@ -2,8 +2,6 @@
 
 ---
 
-## 1. INTEGRATION MANAGEMENT
-
 **PROJECT CHARTER**
 
 ```
