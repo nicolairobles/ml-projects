@@ -83,156 +83,10 @@ Level 4: WORK PACKAGES
 (Continue for all phases...)
 ```
 
-**Outputs:**
-
-**SCOPE BASELINE**
-
-The Scope Baseline consists of:
-1. Project Scope Statement (above)
-2. WBS (above)
-3. WBS Dictionary (below)
-
-**WBS DICTIONARY** (Sample Entries)
-
-```
-WORK PACKAGE: 2.2 Reddit Integration
-
-Code: 2.2
-Description: Develop tool to search Reddit for customer pain point discussions
-Deliverable: Functional Reddit API wrapper that returns structured post data
-
-Acceptance Criteria:
-- Searches 3+ subreddits simultaneously
-- Returns 10-20 relevant posts per query
-- Handles API errors gracefully
-- Returns data in standardized format (title, text, upvotes, url)
-
-Owner: ?
-Duration: 2 days (16 hours)
-Dependencies: 2.1 (Environment Setup) must be complete
-Resources: 1 developer, Reddit API documentation
-Cost: $0 (Reddit API is free)
-
----
-
-WORK PACKAGE: 2.3 LangChain Agent Core
-
-Code: 2.3
-Description: Build agent orchestration logic using LangChain framework
-Deliverable: Working agent that can select tools and process queries
-
-Acceptance Criteria:
-- Agent accepts natural language queries
-- Agent selects appropriate tool(s) based on query
-- Agent chains tool results
-- Agent passes results to LLM for extraction
-
-Owner: ?
-Duration: 2 days (16 hours)
-Dependencies: 2.2 (Reddit Integration) must be complete
-Resources: 1 developer, LangChain documentation, OpenAI API
-Cost: $2 (OpenAI API testing)
-
----
-
-WORK PACKAGE: 3.1 Twitter/X API Integration
-
-Code: 3.1
-Description: Integrate Twitter API for social media pain point discovery
-Deliverable: Twitter API wrapper returning tweet data
-
-Acceptance Criteria:
-- Searches Twitter for relevant tweets
-- Returns 10-20 tweets per query
-- Parses tweet text, author, engagement
-- Handles rate limiting
-
-Owner: ?
-Duration: 1.5 days (12 hours)
-Dependencies: 2.2 (Reddit Integration) as template
-Resources: 1 developer, Twitter API docs
-Cost: $0-5 (Twitter API basic tier)
-```
-
----
-
-## 3. SCHEDULE MANAGEMENT
-
-### 2.06 Plan Schedule Management
-
-**Outputs:**
-
-**SCHEDULE MANAGEMENT PLAN**
-
-```
-HOW SCHEDULE WILL BE PLANNED:
-- Work packages estimated in hours (not story points)
-- Each developer allocated 2-3 hours/day (10-15 hours/week)
-- Product Owner and TPM: 5-10 hours/week
-- Buffer time: 20% added to each work package estimate
-
-HOW SCHEDULE WILL BE EXECUTED:
-- Daily asynchronous updates in Slack/Discord
-- Weekly 1-hour synchronous team meeting
-- Pair programming for complex tasks
-- GitHub Projects board for task tracking
-
-HOW SCHEDULE WILL BE CONTROLLED:
-- Daily progress check by TPM
-- Weekly sprint retrospective
-- Variance analysis (actual vs. planned hours)
-- Corrective action if >20% variance on critical path
-
-LEVELS OF ACCURACY:
-- Phase-level estimates: ±25% accuracy
-- Work package estimates: ±15% accuracy
-- Activity estimates: ±10% accuracy
-
-RULES OF PERFORMANCE MEASUREMENT:
-- Earned Value Management (simplified)
-- Tasks marked as 0%, 50%, or 100% complete
-- No partial credit for incomplete work packages
-
-PROJECT SCHEDULE MODEL DEVELOPMENT:
-- Precedence Diagramming Method (PDM)
-- Critical Path Method (CPM)
-- Rolling wave planning (Week 1 detailed, Weeks 2-4 high-level)
-
-REPORTING FORMATS:
-- Weekly status report (narrative)
-- Gantt chart (visual timeline)
-- Burn-down chart (tasks remaining)
-
-RELEASE AND ITERATION LENGTH:
-- Sprint length: 1 week
-- Release cycle: Phase completion (every week)
-- Final release: Week 4 (Dec 6, 2025)
-```
-
----
-
-### 2.07 Define Activities
-
-**Inputs:**
-- WBS (from 2.05)
-
-**Tools & Techniques:**
-
-**Decomposition:**
-Work packages from WBS broken down into scheduled activities.
-
-**Rolling Wave Planning:**
-- Week 1 (Nov 11-15): Detailed activity planning completed
-- Week 2 (Nov 18-22): High-level activities defined, details added during Week 1
-- Week 3 (Nov 25-29): High-level activities defined, details added during Week 2
-- Week 4 (Dec 2-6): High-level activities defined, details added during Week 3
-
-**Outputs:**
-
 **ACTIVITY LIST (Week 1 - Detailed)**
 
 ```
-PHASE 1: FOUNDATION (Week 1: Nov 11-15)
+PHASE 1: FOUNDATION 
 
 Activity ID: 1.1.1
 Activity: Create GitHub Repository
@@ -274,21 +128,21 @@ Activity: Design Reddit API wrapper interface
 Description: Define function signatures and return data structure
 Work Package: 2.2.1 Reddit API Wrapper Development
 Duration: 1 hour
-Owner: Edison
+Owner: ?
 
 Activity ID: 1.2.2
 Activity: Implement Reddit search functionality
 Description: Code search_subreddits() function with error handling
 Work Package: 2.2.2 Reddit Search Functionality
 Duration: 4 hours
-Owner: Edison
+Owner: ?
 
 Activity ID: 1.2.3
 Activity: Implement Reddit data parsing
 Description: Parse Reddit API response into standardized format
 Work Package: 2.2.3 Data Parsing & Formatting
 Duration: 2 hours
-Owner: Edison
+Owner: ?
 
 Activity ID: 1.2.4
 Activity: Write unit tests for Reddit tool
@@ -382,25 +236,6 @@ Duration: 0.5 hours
 Owner: Nicolai
 ```
 
-**ACTIVITY ATTRIBUTES**
-
-```
-Activity ID: 1.2.2
-Activity Name: Implement Reddit search functionality
-Point of Contact: ?
-Location of Work: Remote (individual work)
-Calendar: Working days (Mon-Fri)
-Work Hours: 9 AM - 5 PM EST (flexible)
-Resource Requirements: 1 developer, Reddit API docs, IDE
-Predecessor Activities: 1.2.1 (Design Reddit API wrapper)
-Successor Activities: 1.2.3 (Implement Reddit data parsing)
-Assumptions: Reddit API is accessible and documented
-Constraints: Must handle rate limiting (60 requests/minute)
-Level of Effort: 4 hours
-Coding Requirements: Python 3.9+, praw library
-Testing Requirements: Unit tests with mock data
-```
-
 **MILESTONE LIST**
 
 ```
@@ -462,7 +297,3 @@ Type: Optional (Marketing)
 Description: Share demo link on LinkedIn/Twitter
 Criteria: Agent functional enough for external viewing
 ```
-
-**Recommendation for Monday:**
-1. Review and approve Project Charter + Scope Statement (15 min)
-2. Validate requirements with team (10 min)
